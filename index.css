@@ -1,3 +1,85 @@
-input{
-    border-radius: 10px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.product {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container .product {
+    flex: 1 1 calc(100% - 20px);
+    margin: 10px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .flex-container .product,
+    .grid-container .product {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .flex-container .product,
+    .grid-container .product {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
