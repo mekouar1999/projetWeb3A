@@ -1,31 +1,16 @@
-.div1{
-width: 200px;
-height: 200px;
-background-color: red;
-}
-
-.div2{
-    width: 200px;
-height: 200px;
-background-color: yellow;
-}
-
-.div3{
-    width: 200px;
-height: 200px;
-background-color: green;
-}
-
-.divmaman{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.premierh1{
-    text-align: center;
-    color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
+.container {
+    display: flex
+    ;
+        flex-wrap: wrap;
+        height: 100vh;
+        background-color: #f0f0f0;
+        gap: 40px;
+        align-content: flex-end;
+  }
+  
+  .container div {
+    width: 50px;
+    height: 50px;
+    background-color: #4cb6ea;
+  }
+  
