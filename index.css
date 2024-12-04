@@ -1,36 +1,31 @@
+.div1{
+width: 200px;
+height: 200px;
+background-color: red;
+}
+
+.div2{
+    width: 200px;
+height: 200px;
+background-color: yellow;
+}
+
+.div3{
+    width: 200px;
+height: 200px;
+background-color: green;
+}
+
+.divmaman{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .premierh1{
-    color: green;
-    font-size: 15px;
-}
-
-.deuxiemeh1{
+    text-align: center;
     color: red;
-    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
-
-span{
-    color: brown;
-}
-.span1{
-
-    font-size: 30px;
-}
-
-.span2{
-    font-size: 72px;}
-
-    .div1{
-        width: 300px;
-        height: 300px;
-        background-color: red;
-        border-radius: 50%;
-        margin-bottom: 100px;
-    }
-
-    .div2{
-        width: 300px;
-    height: 300px;
-    background-color: yellow;
-    border-radius: 50%;
-    margin-bottom: 50px;
-    }
